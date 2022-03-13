@@ -6,9 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 02</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+
+    <link rel="stylesheet" href="../../css/bootstrap-datepicker.css">
+
 </head>
 
 <body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-10 col-sm-8 col-md-6 mt-3">
+
+                <div class="alert-primary shadow">
+                    <h1 class="text-center text-white">
+                        Aula 02
+                    </h1>
+                </div>
+
+                <form id="form" class="mt-5">
+
+                    <div class="form-group mt-5">
+                        <input type="text" name="NOME" id="NOME" class="form-control" placeholder="Digite seu nome...">
+                    </div>
+
+                    <div class="form-group mt-5">
+                        <!-- <input type="text" name="DATA_NASC" id="DATA_NASC" class="form-control" placeholder="Digite sua data de nascimento..."> -->
+                        <div class="input-group date">
+                            <input type="text" class="form-control" name="DATA_NASC" id="DATA_NASC" placeholder="Digite sua data de nascimento...">
+                            <image src="../../img/icon-calendario.png"></image>
+
+                            <!-- <div class="input-group-addon">
+                                <span class="mdi mdi-CalendarMonth"></span>
+                                <i class="mdi mdi-calendar-month"></i>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-5">
+                        <input type="text" name="BEBIDA" id="BEBIDA" class="form-control" placeholder="Digite a bebida que gosta...">
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label>Selecione seu animal favorito</label>
+                        <select name="ANIMAL" id="ANIMAL" class="form-control">
+                                <option value="">Selecione o animal...</option>
+                                <option value="1">Cachorro</option>
+                                <option value="2">Gato</option>
+                                <option value="3">Peixe</option>
+                        </select>
+                    </div> -->
+
+                    <div class="form-group row justify-content-end">
+                        <div class="col-10 col-sm-8 col-md-6 mt-3">
+                            <button class="btn btn-success btn-block btn-send">
+                                Enviar
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Local para receber o retorno do serviço-->
+    <div id="retorno" class="row justify-content-center">
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+
+    <script src="../../js/bootstrap-datepicker.min.js"></script>
+    <script src="../../locales/bootstrap-datepicker.pt-BR.min.js"></script>
+
+
+    <script src="../controle/function_aula.js"></script>
+
+
+    <script type="text/javascript">
+        $('#DATA_NASC').datepicker({
+            format: 'dd/mm/yyyy',
+            language: 'pt-BR',
+            endDate: '+0d'
+        });
+    </script>
 
 </body>
 
