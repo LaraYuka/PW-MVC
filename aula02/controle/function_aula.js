@@ -34,7 +34,7 @@ $(document).ready(function() {
                                     </br>
                                     ${dados.mensagem4}
                                 </h1>
-                                <img src="../../img/${dados.img}" class="img-fluid">
+                                <img src="../../img/${dados.img}" class="img-fluid rounded">
                             </div>
                             <div class="mt-3 alert-danger">
                                 <h1 class="text-center text-dark alerta">
