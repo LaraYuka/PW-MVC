@@ -56,11 +56,12 @@
 
         switch($DATA_NASC){
             case $idade < 18 : $dados = array(
-                "tipo" => 'Você não pode beber',
+                "tipo" => 'Você não pode beber bebida alcoólica',
                 "mensagem" => 'Idade: ' . $idade . ' anos',
                 "mensagem2" => 'Nome: ' . $nome,
                 "mensagem3" => 'Data de nascimento: ' . $DATA_NASC,
                 "mensagem4" => 'Bebida: ' . $bebida,
+                "img" => 'img1.png'
             );
             break;
 
