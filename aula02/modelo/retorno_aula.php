@@ -67,9 +67,9 @@
             case $idade >= 18 : $dados = array(
                 "tipo" => 'Você pode beber',
                 "mensagem" => 'Idade: '.$idade.' anos',
-                "mensagem2" => 'Nome: ' . $NOME,
+                "mensagem2" => 'Nome: ' . $nome,
                 "mensagem3" => 'Data de nascimento: ' . $DATA_NASC,
-                "mensagem4" => 'Bebida: ' . $BEBIDA,
+                "mensagem4" => 'Bebida: ' . $bebida,
             );
             break;
         }
