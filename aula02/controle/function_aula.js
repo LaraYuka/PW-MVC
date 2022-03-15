@@ -25,9 +25,18 @@ $(document).ready(function() {
                 $('#retorno').append(`
                 <div class="container-fluid">
                     <div class="row justify-content-center">
-                        <div class="col-10 col-sm-8 col-md-6 mt-3">
-                            <div class="alert-primary">
-                                <h1 class="text-center text-dark">
+                        <div class="col-10 col-sm-8 col-md-6 mt-5">
+                            <div>
+                                <h2 class="teste">
+                                    ${dados.mensagem2}
+                                    </br>
+                                    ${dados.mensagem3}
+                                    </br>
+                                    ${dados.mensagem4}
+                                </h1>
+                            </div>
+                            <div class="mt-3 alert-danger">
+                                <h1 class="text-center text-dark alerta">
                                     ${dados.mensagem}
                                     </br>
                                     ${dados.tipo}

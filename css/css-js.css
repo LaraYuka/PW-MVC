@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Courgette&family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700;1,800&family=Chicle&family=Courgette&family=Patua+One&family=Permanent+Marker&display=swap');
+
+.teste{
+    font-family: 'Alegreya', serif;
+}
+
+.alerta{
+    font-family: 'Chicle', cursive;
+}
+
